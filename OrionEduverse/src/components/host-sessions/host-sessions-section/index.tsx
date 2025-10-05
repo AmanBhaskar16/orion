@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Video, Users, Lightbulb, MessageSquare, Play } from "lucide-react"
-import sessionPlayer from "../../../assets/videos/ViewSession_PRElogin.mp4"
+// import sessionPlayer from "../../../assets/videos/ViewSession_PRElogin.mp4"
 // import { useState } from "react"
 // import {
 //   Dialog,
