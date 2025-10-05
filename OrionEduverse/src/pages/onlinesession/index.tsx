@@ -1,28 +1,28 @@
-import HeroSection from '@/components/online-session-components/HeroSection';
-import ActionCards from '@/components/online-session-components/ActionCards';
-import FeaturedSessions from '@/components/online-session-components/FeaturesSessions';
+// import HeroSection from '@/components/online-session-components/HeroSection';
+// import ActionCards from '@/components/online-session-components/ActionCards';
+// import FeaturedSessions from '@/components/online-session-components/FeaturesSessions';
 
-import Footer from '@/components/postlogincomponents/footer';
-import Navbarpostlogin from '@/components/postlogincomponents/Navbarpostlogin';
+// import Footer from '@/components/postlogincomponents/footer';
+// import Navbarpostlogin from '@/components/postlogincomponents/Navbarpostlogin';
 
-import SessionCard from '@/components/host-sessions/online-session-components/sessionCard';
+// import SessionCard from '@/components/host-sessions/online-session-components/sessionCard';
 
-const OnlineSessionPage: React.FC = () => {
-  return (
+// const OnlineSessionPage: React.FC = () => {
+//   return (
 
     
-      <div className="min-h-screen bg-slate-900">
-      <Navbarpostlogin />  
-      <HeroSection />
-       <SessionCard />
-      <ActionCards />
+//       <div className="min-h-screen bg-slate-900">
+//       <Navbarpostlogin />  
+//       <HeroSection />
+//        <SessionCard />
+//       <ActionCards />
      
-      <FeaturedSessions />
-      <Footer />
-    </div>
+//       <FeaturedSessions />
+//       <Footer />
+//     </div>
     
-  );
-};
+//   );
+// };
 
 
-export default OnlineSessionPage;
+// export default OnlineSessionPage;

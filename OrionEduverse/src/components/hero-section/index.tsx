@@ -143,20 +143,20 @@
 
 import { useState } from "react";
 import { Sparkles } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import LoginForm from "@/components/auth/login-form";
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogDescription,
+//   DialogHeader,
+//   DialogTitle,
+// } from "@/components/ui/dialog";
+// import LoginForm from "@/components/auth/login-form";
 import UserFormModal from "../UserFormModal";
 
 import coinRollingVideo from "@/assets/videos/Coins.mp4";
 
 const HeroSection = () => {
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  // const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const handleOpenModal = () => setIsModalOpen(true);
@@ -268,7 +268,7 @@ const HeroSection = () => {
       )}
 
       {/* 🔹 Login Modal */}
-      <Dialog open={isLoginModalOpen} onOpenChange={setIsLoginModalOpen}>
+      {/* <Dialog open={isLoginModalOpen} onOpenChange={setIsLoginModalOpen}>
         <DialogContent className="sm:max-w-md border-0 shadow-2xl bg-gray-900 text-white">
           <DialogHeader className="text-center">
             <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -280,7 +280,7 @@ const HeroSection = () => {
           </DialogHeader>
           <LoginForm onClose={() => setIsLoginModalOpen(false)} />
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </section>
   );
 };

@@ -2,19 +2,19 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Video, Users, Lightbulb, MessageSquare, Play } from "lucide-react"
-import { useState } from "react"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
-import LoginForm from "@/components/auth/login-form"
+// import { useState } from "react"
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogDescription,
+//   DialogHeader,
+//   DialogTitle,
+// } from "@/components/ui/dialog"
+// import LoginForm from "@/components/auth/login-form"
 // import { useAuth } from "@/contexts/AuthContext"
 
 const HostSessionsSection = () => {
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
+  // const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
   // const { user } = useAuth()
 
   const sessionTypes = [
@@ -184,7 +184,7 @@ const HostSessionsSection = () => {
       </div>
 
       {/* Login Modal */}
-      <Dialog open={isLoginModalOpen} onOpenChange={setIsLoginModalOpen}>
+      {/* <Dialog open={isLoginModalOpen} onOpenChange={setIsLoginModalOpen}>
         <DialogContent className="sm:max-w-md border-0 shadow-2xl">
           <DialogHeader className="text-center">
             <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -196,7 +196,7 @@ const HostSessionsSection = () => {
           </DialogHeader>
           <LoginForm onClose={() => setIsLoginModalOpen(false)} />
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </section>
   )
 }
