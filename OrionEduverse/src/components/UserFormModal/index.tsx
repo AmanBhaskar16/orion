@@ -8,8 +8,8 @@ interface UserFormModalProps {
   onSubmitSuccess: () => void;
 }
 
-const API_URL = import.meta.env.VITE_API_URL
-  ? `${import.meta.env.VITE_API_URL}/submit-user`
+const API_URL = import.meta.env.VITE_API_BASE
+  ? `${import.meta.env.VITE_API_BASE}/api/submit-user`
   : "http://localhost:4000/api/submit-user";
 
 
