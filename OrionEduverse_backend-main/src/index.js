@@ -10,6 +10,7 @@ import dotenv from "dotenv";
 // import { authenticateToken } from "./middleware/auth.js";
 // import pool from "./config/db.js";
 import prisma from "./config/prismaClient.js";
+import serverless from "serverless-http";
 import cors from "cors";
 import morgan from "morgan";
 import { generalLimiter } from "./utils/helpers/rateLimiter.js";
@@ -180,3 +181,4 @@ app.use((err, req, res, next) => {
 // app.listen(PORT, () => {
 //   console.log(`Server listening on http://localhost:${PORT}`);
 // });
+export default serverless(app);
