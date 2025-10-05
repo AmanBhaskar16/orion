@@ -66,6 +66,7 @@ app.use(express.json());
 app.post('/api/submit-user', async (req, res) => {
     // Expected structure: { email: string, role: string }
     const { email, role } = req.body;
+    console.log(email, role)
 
     if (!email || !role) {
         return res.status(400).json({ error: 'Email and role are required.' });
@@ -177,6 +178,6 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-// app.listen(PORT, () => {
-//   console.log(`Server listening on http://localhost:${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}`);
+});

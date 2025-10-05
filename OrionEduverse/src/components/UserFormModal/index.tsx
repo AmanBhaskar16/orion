@@ -10,7 +10,7 @@ interface UserFormModalProps {
 
 const API_URL = import.meta.env.VITE_API_URL
   ? `${import.meta.env.VITE_API_URL}/submit-user`
-  : "http://localhost:4000/submit-user";
+  : "http://localhost:4000/api/submit-user";
 
 
 const UserFormModal: React.FC<UserFormModalProps> = ({
