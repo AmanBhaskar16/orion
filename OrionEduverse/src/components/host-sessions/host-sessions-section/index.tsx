@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Video, Users, Lightbulb, MessageSquare, Play } from "lucide-react"
-import coinRollingVideo from "@/assets/videos/Coins.mp4";
+import sessionPlayer from "../../../assets/videos/ViewSession_PRElogin.mp4"
 // import { useState } from "react"
 // import {
 //   Dialog,
@@ -118,7 +118,7 @@ const HostSessionsSection = () => {
             <div className="relative group">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm">
                 <video
-                  src={coinRollingVideo}
+                  src="/videos/ViewSession_PRElogin.mp4"
                   width={600}
                   height={400}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 group-hover:brightness-100"
