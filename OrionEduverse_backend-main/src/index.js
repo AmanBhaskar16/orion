@@ -37,7 +37,8 @@ const PORT = process.env.PORT || 4000;
 //   credentials: true
 // }));
 app.use(cors({
-  origin: "https://orion-ufot-git-main-amanbhaskar16s-projects.vercel.app"
+  origin: "https://orion-ufot-git-main-amanbhaskar16s-projects.vercel.app",
+  methods: ["GET","POST"],
 }));
 
 
