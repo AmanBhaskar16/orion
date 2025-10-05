@@ -12,19 +12,19 @@ import dotenv from "dotenv";
 import prisma from "./config/prismaClient.js";
 import serverless from "serverless-http";
 import cors from "cors";
-import morgan from "morgan";
-import { generalLimiter } from "./utils/helpers/rateLimiter.js";
-import winston from "winston";
+// import morgan from "morgan";
+// import { generalLimiter } from "./utils/helpers/rateLimiter.js";
+// import winston from "winston";
 
 // Load environment variables from .env file
 dotenv.config();
 
 // Check required environment variables
 ["JWT_SECRET", "DATABASE_URL"].forEach((key) => {
-  if (!process.env[key]) {
-    console.error(`Missing required environment variable: ${key}`);
-    process.exit(1);
-  }
+  if (!process.env[key]) {
+    console.error(`[WARNING] Missing environment variable: ${key}. Routes relying on it will fail.`);
+    // REMOVE or COMMENT OUT: process.exit(1);
+  }
 });
 
 const app = express();
@@ -44,20 +44,20 @@ app.use(cors({
 
 
 // Set up HTTP request logging
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 // Set up rate limiting for all requests (customize as needed)
-app.use(generalLimiter);
+// app.use(generalLimiter);
 
 // Winston logger setup (for errors)
-const logger = winston.createLogger({
-  level: "info",
-  format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.json()
-  ),
-  transports: [new winston.transports.Console()],
-});
+// const logger = winston.createLogger({
+//   level: "info",
+//   format: winston.format.combine(
+//     winston.format.timestamp(),
+//     winston.format.json()
+//   ),
+//   transports: [new winston.transports.Console()],
+// });
 
 app.use(express.json());
 
