@@ -9,10 +9,10 @@ import dotenv from "dotenv";
 // import sessionRoutes from './routes/sessionRoutes.js';
 // import { authenticateToken } from "./middleware/auth.js";
 // import pool from "./config/db.js";
-import prisma from "./config/prismaClient.js";
+import prisma from "./src/config/prismaClient.js";
 import cors from "cors";
 import morgan from "morgan";
-import { generalLimiter } from "./utils/helpers/rateLimiter.js";
+import { generalLimiter } from "./src/utils/helpers/rateLimiter.js";
 import winston from "winston";
 
 // Load environment variables from .env file
