@@ -30,7 +30,13 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Set up CORS (allow all origins by default, customize as needed)
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: "https://orion-ufot-git-main-amanbhaskar16s-projects.vercel.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 
 // Set up HTTP request logging
 app.use(morgan("dev"));
