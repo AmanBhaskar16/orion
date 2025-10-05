@@ -37,7 +37,7 @@ const PORT = process.env.PORT || 4000;
 //   credentials: true
 // }));
 app.use(cors({
-  origin: "https://orion-ufot-git-main-amanbhaskar16s-projects.vercel.app",
+  origin: "*",
   methods: ["GET","POST"],
 }));
 
@@ -63,7 +63,7 @@ app.use(express.json());
 // Serve static files (uploaded images)
 // app.use("/uploads", express.static("uploads"));
 
-app.post('/api/submit-user', async (req, res) => {
+app.post('/submit-user', async (req, res) => {
     // Expected structure: { email: string, role: string }
     const { email, role } = req.body;
 
@@ -177,6 +177,6 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server listening on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server listening on http://localhost:${PORT}`);
+// });
