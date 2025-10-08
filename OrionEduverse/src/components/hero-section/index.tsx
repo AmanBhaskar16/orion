@@ -445,20 +445,69 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 ">
-        <div className=" space-x-2 mb-5">
+        {/* <div className=" space-x-2 mb-5"> */}
               {/* NOTE: Make sure OrionLogo path is correct or use a placeholder */}
-              <img src={OrionLogo} alt="Orion Logo" className=" mt-10 ml-25 mb-5 h-80 w-auto" />
+{/*               <img src={OrionLogo} alt="Orion Logo" className=" mt-10 ml-25 mb-5 h-80 w-auto" /> */}
               
-              <h3 className="mt-0 mb-5 pb-5 font-extrabold text-9xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              {/* <h3 className="mt-0 mb-5 pb-5 font-extrabold text-9xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               <span className="text-white">Om</span>Verg
           </h3>
-          <h4 className="text-5xl text-white font-bold">Uniting Opportunities !</h4>
-            </div>
+          <h4 className="text-5xl text-white font-bold">Uniting Opportunities !</h4> */}
+{/*             </div> */}
+
         {/* Badge */}
         {/* <div className=" h-30 inline-flex items-center space-x-2 bg-indigo-500/20 backdrop-blur-md border border-indigo-400/30 text-indigo-200 px-2 py-3 rounded-full text-lg font-medium mb-6">
           <Sparkles className="h-4 w-4 text-indigo-300" />
           <span className="h-">For StartUps</span>
         </div> */}
+
+          <div className="
+    // MOBILE: Stack vertically, center items, add vertical spacing
+    flex flex-col items-center space-y-4 mb-5 
+    
+    // DESKTOP (md: and up): Switch to horizontal row, vertically center items, set large horizontal spacing
+   
+">
+    
+    {/* Image: Small on mobile (h-32), reverts to original large size and spacing on desktop (h-80, ml-25) */}
+    <img 
+        src={OrionLogo} 
+        alt="Orion Logo" 
+        className="
+            // Mobile Sizing and Spacing
+            mt-5 mb-3 h-32 w-auto 
+            
+            // Desktop Sizing and Spacing (Restores the original large look)
+            md:mt-10 md:mb-5 md:h-80 md:ml-12
+        " 
+    />
+    
+    {/* Text Block Container: Holds the two headings. Ensures they are left-aligned next to the image on desktop. */}
+    <div className="
+        // MOBILE: Center text content
+        flex flex-col items-center
+    ">
+        
+        {/* H3 (Title): Small on mobile (text-5xl), original large size on desktop (md:text-9xl) */}
+        <h3 className="
+            mt-0 mb-3 pb-8 
+            font-extrabold 
+            text-5xl md:text-9xl // Responsive font size
+            bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent
+        ">
+            <span className="text-white mb-8">Om</span>Verg
+        </h3>
+
+        {/* H4 (Subtitle): Small on mobile (text-2xl), original large size on desktop (md:text-5xl) */}
+        <h4 className="
+            text-2xl md:text-5xl mt-8 // Responsive font size
+            text-white font-bold
+        ">
+            Uniting Opportunities !
+        </h4>
+    </div>
+</div>
+
         <span className="text-4xl text-indigo-500 font-extrabold mb-5 mt-5">For StartUps</span>
 
         {/* Main Heading */}
