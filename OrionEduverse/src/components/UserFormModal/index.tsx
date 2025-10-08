@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import type { FormEvent } from "react";
 import toast from "react-hot-toast";
+import logo from "../../assets/logoimg.png"
 
 interface UserFormModalProps {
   onClose: () => void;
@@ -71,9 +72,13 @@ const UserFormModal: React.FC<UserFormModalProps> = ({
         className="relative w-full max-w-md rounded-2xl bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-slate-900/95 border border-slate-700/60 shadow-[0_0_25px_rgba(56,189,248,0.25)] p-8 text-slate-100"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-3xl font-bold bg-gradient-to-r from-sky-400 via-violet-400 to-pink-400 bg-clip-text text-transparent text-center mb-6">
-          Join Our Waitlist
+        <div className="flex space-x-4.5">
+          <img src={logo} className="h-12 w-auto mb-6 " />
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-sky-400 via-violet-400 to-pink-400 bg-clip-text text-transparent text-center mb-6">
+          Join the Waitlist
         </h2>
+        </div>
+        
 
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* Email Input */}
@@ -122,11 +127,14 @@ const UserFormModal: React.FC<UserFormModalProps> = ({
               <option value="Investor" className="bg-slate-900">
                 Investor
               </option>
-              <option value="Mentor" className="bg-slate-900">
-                Mentor
+              <option value="Mentor/Professional" className="bg-slate-900">
+                Mentor/Professional
               </option>
               <option value="Accelerator" className="bg-slate-900">
                 Accelerator
+              </option>
+              <option value="MNCs" className="bg-slate-900">
+                MNCs
               </option>
             </select>
           </div>

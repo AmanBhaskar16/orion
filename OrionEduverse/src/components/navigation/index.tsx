@@ -105,7 +105,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
-import OrionLogo from "../../assets/Orion__logo.png"
+import OrionLogo from "../../assets/logoimg.png"
+// import LogoWord from "../../assets/OmVerg_word.png";
 // import AuthModals from "@/components/auth/auth-modals" // Kept for context
 
 const Navigation = () => {
@@ -136,7 +137,9 @@ const Navigation = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               {/* NOTE: Make sure OrionLogo path is correct or use a placeholder */}
-              <img src={OrionLogo} alt="Orion Logo" className="h-26 w-auto" />
+              <img src={OrionLogo} alt="Orion Logo" className="h-10 w-auto" />
+              {/* <img src={LogoWord} alt="Orion Logo" className="h-5 ml-[0px] w-auto" /> */}
+              <h3 className="text-white font-bold">Om<span className="text-fuchsia-500">Verg</span></h3>
             </div>
 
             {/* Primary Action Button (Desktop/Mobile) */}

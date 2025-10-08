@@ -189,7 +189,7 @@ const ExploreSection = () => {
             variant="secondary" 
             className="mb-4 text-sm bg-white/10 text-white border-white/20 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 animate-in fade-in-0 slide-in-from-top-4"
           >
-            Explore other startups
+            Explore Other Startups
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 animate-in fade-in-0 slide-in-from-top-6 duration-700 delay-100">
             Discover{" "}
@@ -200,7 +200,7 @@ const ExploreSection = () => {
             the Future
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 animate-in fade-in-0 slide-in-from-top-8 duration-700 delay-200">
-            Network with fellow entrepreneurs,Discover AI powered collaboration & co-sell Oppurtunities,Expand your market reach,build credibility & co-innovate with startups across industries.
+            Network with fellow entrepreneurs, Discover AI powered collaboration & Co-Sell Oppurtunities, Expand your market reach,  build credibility & Co-Innovate with startups across industries.
           </p>
         </div>
 

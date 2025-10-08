@@ -51,7 +51,7 @@ const HostSessionsSection = () => {
             Founder's Sessions
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto">
-            Learn, share, and build visibility with interactive sessions, AMAs, Workshops, and roundtables — online & offline
+            Learn, share, and build visibility with interactive sessions, AMAs, Workshops, and Roundtables — <span className="underline">Online</span> & <span className="underline">Offline</span>
           </p>
         </div>
 
@@ -86,7 +86,7 @@ const HostSessionsSection = () => {
               <div className="relative overflow-hidden rounded-2xl shadow-2xl border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm">
                 <video
                   ref={videoRef}
-                  src="/videos/session.mp4" // public folder path
+                  src="/videos/Sessions.mp4" // public folder path
                   width={600}
                   height={400}
                   className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700 brightness-90 group-hover:brightness-100"

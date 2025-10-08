@@ -115,7 +115,7 @@
 
   import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Users, FlaskConical, Building, Briefcase } from "lucide-react"
+import { Users, Building, Briefcase, HandshakeIcon } from "lucide-react"
 // Assuming these paths are correct in your project setup
 import Internship from "../../assets/internship.png" 
 import LiveProject from "../../assets/Full Time employee.png"
@@ -143,7 +143,7 @@ const ShareNeedsSection = () => {
       image: LiveProject,
     },
     {
-      icon: FlaskConical,
+      icon: HandshakeIcon,
       title: "Partners",
       description: "Find co-builders & tech partners.",
       // Stronger color accent for icon border and glow
@@ -192,7 +192,7 @@ const ShareNeedsSection = () => {
             </span>{" "}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto animate-in fade-in-0 slide-in-from-top-6 duration-700 delay-200">
-            Share hiring needs or collaboration requests and connect with blockchain verified students,professionals and other startups.
+            Share hiring needs or collaboration requests and connect with blockchain verified students, professionals and other startups.
           </p>
         </div>
 

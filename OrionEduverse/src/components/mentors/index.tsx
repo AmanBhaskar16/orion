@@ -3,6 +3,7 @@ import vivek from "../../assets/vivek_k.png"
 import bhanu from "../../assets/Bhanu.png"
 import jayant from "../../assets/jayant.jpeg"
 import mandal from "../../assets/ankur_mandal.jpeg"
+import saurav from "../../assets/Saurav.png"
 // "use client";
 
 // import { useState, useRef } from "react";
@@ -296,8 +297,9 @@ import mandal from "../../assets/ankur_mandal.jpeg"
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 const mentors = [
+  { name: "Saurav Kumar", role: "Founder Orion Eduverse, IIM Calcutta", image: saurav },
   { name: "Vivek KV", role: "IAS, IIM Calcutta", image: vivek },
-  { name: "Dr. Ankur Shukla", role: "Prof. Finance & Strategy, IIM Ranchi", image: ankur },
+  { name: "Dr. Ankur Shukla", role: "Prof. Finance & Strategy, Ph.D IIM Ranchi", image: ankur },
   { name: "Bhanu Pratap", role: "Co-founder at Mediversal HealthCare", image: bhanu },
   { name: "Jayant Gandhi", role: "Co-founder at Mediversal HealthCare", image: jayant },
   { name: "Ankur Mandal", role: "DoppleIQ, IIM Calcutta", image: mandal },
@@ -399,7 +401,7 @@ export default function MentorsSection() {
           From Brightest Minds
         </h2>
         <p className="text-lg sm:text-xl mb-12 text-center text-gray-300 max-w-3xl mx-auto">
-          Access top-tier advisors and mentors with backgrounds from IITs, IIMs, Harvard, and global accelerators.
+          Connect with world-class advisors and mentors from IITs, IIMs, LSE, BCG and McKinsey alongside investors and accelerators with a global footprint.
         </p>
 
         {/* Carousel */}

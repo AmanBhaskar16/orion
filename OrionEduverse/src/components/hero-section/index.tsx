@@ -289,8 +289,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Sparkles } from "lucide-react";
+// import { Sparkles } from "lucide-react";
 import UserFormModal from "../UserFormModal";
+import OrionLogo from "../../assets/logoimg.png"
+// import LogoWord from "../../assets/OmVerg_word.png"
 
 // You can remove this import since we're not using the video anymore
 // import coinRollingVideo from "@/assets/videos/Coins.mp4";
@@ -429,7 +431,8 @@ const HeroSection = () => {
       {/* Canvas Background with Particles */}
       <div className="absolute top-0 left-0 w-full h-full z-0 rounded-3xl overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #0a1628 0%, #1a2332 50%, #0d1b2a 100%)'
+          // background: 'linear-gradient(135deg, #0a1628 0%, #1a2332 50%, #0d1b2a 100%)'
+          background : 'black'
         }}>
         <canvas
           ref={canvasRef}
@@ -441,27 +444,37 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/20 to-blue-950/40 z-[1] rounded-3xl pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24 sm:py-32">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 ">
+        <div className=" space-x-2 mb-5">
+              {/* NOTE: Make sure OrionLogo path is correct or use a placeholder */}
+              <img src={OrionLogo} alt="Orion Logo" className=" mt-10 ml-25 mb-5 h-80 w-auto" />
+              
+              <h3 className="mt-0 mb-5 pb-5 font-extrabold text-9xl bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <span className="text-white">Om</span>Verg
+          </h3>
+          <h4 className="text-5xl text-white font-bold">Uniting Opportunities !</h4>
+            </div>
         {/* Badge */}
-        <div className="inline-flex items-center space-x-2 bg-indigo-500/20 backdrop-blur-md border border-indigo-400/30 text-indigo-200 px-5 py-2 rounded-full text-sm font-medium mb-6">
+        {/* <div className=" h-30 inline-flex items-center space-x-2 bg-indigo-500/20 backdrop-blur-md border border-indigo-400/30 text-indigo-200 px-2 py-3 rounded-full text-lg font-medium mb-6">
           <Sparkles className="h-4 w-4 text-indigo-300" />
-          <span>From Pre-Seed to Post-IPO</span>
-        </div>
+          <span className="h-">For StartUps</span>
+        </div> */}
+        <span className="text-4xl text-indigo-500 font-extrabold mb-5 mt-5">For StartUps</span>
 
         {/* Main Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
-          Welcome to the World's{" "}
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white leading-tight mb-6">
+          Build, Connect & Grow with the {" "}
           <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-            Largest Platform
+            Next-Gen Startup Network
           </span>{" "}
-          for Startups
-        </h1>
+           — powered by AI and Blockchain.
+        </h3>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        {/* <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
           Build, Connect & Grow with the next-gen startup network — powered by
           AI and Blockchain.
-        </p>
+        </p> */}
 
         {/* CTA Button */}
         <div className='flex justify-center mt-6 mb-20'>
@@ -478,7 +491,7 @@ const HeroSection = () => {
             " 
             onClick={handleOpenModal}
           >
-            <span className="relative z-10 tracking-wider">
+            <span className="relative z-10 text-2xl tracking-wider">
               Join the Waitlist
             </span>
           </button>

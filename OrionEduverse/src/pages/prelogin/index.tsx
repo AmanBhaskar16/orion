@@ -88,7 +88,7 @@ const Prelogin = () => {
       <span id="button-border-pulse" className="absolute inset-0 rounded-xl"></span>
       
       {/* Text Content */}
-      <span className="relative z-10 tracking-wider">
+      <span className="relative z-10 text-2xl tracking-wider">
         Join the Waitlist
       </span>
     </button>
